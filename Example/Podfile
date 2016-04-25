@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'AiryRefreshControl_Example', :exclusive => true do
+  pod 'AiryRefreshControl', :path => '../'
+end
+
+target 'AiryRefreshControl_Tests', :exclusive => true do
+  pod 'AiryRefreshControl', :path => '../'
+
+  
+end
