@@ -46,7 +46,7 @@ pod "AiryRefreshControl"
 
 ## Author
 
-[airymiao](airymiao@gmail.com)
+airymiao@gmail.com
 
 ## License
 
