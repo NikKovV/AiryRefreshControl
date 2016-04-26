@@ -1,6 +1,5 @@
 # AiryRefreshControl
 
-[![CI Status](http://img.shields.io/travis/airymiao/AiryRefreshControl.svg?style=flat)](https://travis-ci.org/airymiao/AiryRefreshControl)
 [![Version](https://img.shields.io/cocoapods/v/AiryRefreshControl.svg?style=flat)](http://cocoapods.org/pods/AiryRefreshControl)
 [![License](https://img.shields.io/cocoapods/l/AiryRefreshControl.svg?style=flat)](http://cocoapods.org/pods/AiryRefreshControl)
 [![Platform](https://img.shields.io/cocoapods/p/AiryRefreshControl.svg?style=flat)](http://cocoapods.org/pods/AiryRefreshControl)
@@ -12,29 +11,28 @@ To run the example project, clone the repo, and run `pod install` from the Examp
 #### Header RefreshControl
 
 ```
-    AiryRefreshControl *headerRefreshControl = [AiryRefreshControl attachHeaderRefreshControlToScrollView:self.scrollView target:self action:@selector(loadLatest)];
+AiryRefreshControl *headerRefreshControl = [AiryRefreshControl attachHeaderRefreshControlToScrollView:self.scrollView target:self action:@selector(loadLatest)];
 ```
 
 You can also customise your header refresh view by adopt protocol  `AiryHeaderRefreshViewDataSource`,then set the view to `AiryRefreshControl` like this:
 
 ```
-    AiryRefreshControl *headerRefreshControl = [AiryRefreshControl attachHeaderRefreshControlToScrollView:self.scrollView target:self action:@selector(loadLatest)];
+AiryRefreshControl *headerRefreshControl = [AiryRefreshControl attachHeaderRefreshControlToScrollView:self.scrollView target:self action:@selector(loadLatest)];
 
-    UIView<AiryHeaderRefreshViewDataSource> *customHeaderRefreshView = [[AiryCustomHeaderRefreshView alloc] init];
-    [headerRefreshControl setHeaderRefreshView:customHeaderRefreshView];
+UIView<AiryHeaderRefreshViewDataSource> *customHeaderRefreshView = [[AiryCustomHeaderRefreshView alloc] init];
+[headerRefreshControl setHeaderRefreshView:customHeaderRefreshView];
 ```
 
 #### Footer Refresh Control
 
 ```
-    AiryRefreshControl *footerRefreshControl = [AiryRefreshControl attachFooterRefreshControlToScrollView:self.scrollView target:self action:@selector(loadMore)];
+AiryRefreshControl *footerRefreshControl = [AiryRefreshControl attachFooterRefreshControlToScrollView:self.scrollView target:self action:@selector(loadMore)];
 ```
 
 #### Header & Footer Refresh Control
 
 ```
-    AiryRefreshControl *refreshControl = [AiryRefreshControl attachRefreshControlToScrollview:self.scrollView target:self headerRefreshAction:@selector(loadLatest) footerRefreshAction:@selector(loadMore)];
-
+AiryRefreshControl *refreshControl = [AiryRefreshControl attachRefreshControlToScrollview:self.scrollView target:self headerRefreshAction:@selector(loadLatest) footerRefreshAction:@selector(loadMore)];
 ```
 
 ## Installation
