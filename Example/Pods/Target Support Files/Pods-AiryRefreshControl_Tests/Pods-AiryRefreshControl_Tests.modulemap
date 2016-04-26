@@ -1,0 +1,6 @@
+framework module Pods_AiryRefreshControl_Tests {
+  umbrella header "Pods-AiryRefreshControl_Tests-umbrella.h"
+
+  export *
+  module * { export * }
+}

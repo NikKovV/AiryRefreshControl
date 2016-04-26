@@ -8,8 +8,8 @@
 
 Pod::Spec.new do |s|
   s.name             = "AiryRefreshControl"
-  s.version          = "0.1.0"
-  s.summary          = "A short description of AiryRefreshControl."
+  s.version          = "1.0.0"
+  s.summary          = "iOS pull down & pull up refresh control"
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -18,16 +18,17 @@ Pod::Spec.new do |s|
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
   s.description      = <<-DESC
-                       DESC
+                        iOS pull down & pull up refresh control that is used with UIScrollView
+                        DESC
 
-  s.homepage         = "https://github.com/<GITHUB_USERNAME>/AiryRefreshControl"
+  s.homepage         = "https://github.com/airymiao/AiryRefreshControl"
   # s.screenshots     = "www.example.com/screenshots_1", "www.example.com/screenshots_2"
   s.license          = 'MIT'
   s.author           = { "airymiao" => "airymiao@gmail.com" }
-  s.source           = { :git => "https://github.com/<GITHUB_USERNAME>/AiryRefreshControl.git", :tag => s.version.to_s }
-  # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
+  s.source           = { :git => "https://github.com/airymiao/AiryRefreshControl.git", :tag => s.version.to_s }
+  # s.social_media_url = 'https://twitter.com/airymiao'
 
-  s.ios.deployment_target = '8.0'
+  s.ios.deployment_target = '7.0'
 
   s.source_files = 'AiryRefreshControl/Classes/**/*'
   s.resource_bundles = {
@@ -35,6 +36,6 @@ Pod::Spec.new do |s|
   }
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
+  s.frameworks = 'UIKit'
   # s.dependency 'AFNetworking', '~> 2.3'
 end

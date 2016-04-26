@@ -1,0 +1,14 @@
+PODS:
+  - AiryRefreshControl (1.0.0)
+
+DEPENDENCIES:
+  - AiryRefreshControl (from `../`)
+
+EXTERNAL SOURCES:
+  AiryRefreshControl:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  AiryRefreshControl: ea9d662cae3b3a7542c81a3387579b0519c31384
+
+COCOAPODS: 0.39.0

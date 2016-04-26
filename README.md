@@ -9,7 +9,33 @@
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
 
-## Requirements
+#### Header RefreshControl
+
+```
+    AiryRefreshControl *headerRefreshControl = [AiryRefreshControl attachHeaderRefreshControlToScrollView:self.scrollView target:self action:@selector(loadLatest)];
+```
+
+You can also customise your header refresh view by adopt protocol  `AiryHeaderRefreshViewDataSource`,then set the view to `AiryRefreshControl` like this:
+
+```
+    AiryRefreshControl *headerRefreshControl = [AiryRefreshControl attachHeaderRefreshControlToScrollView:self.scrollView target:self action:@selector(loadLatest)];
+
+    UIView<AiryHeaderRefreshViewDataSource> *customHeaderRefreshView = [[AiryCustomHeaderRefreshView alloc] init];
+    [headerRefreshControl setHeaderRefreshView:customHeaderRefreshView];
+```
+
+#### Footer Refresh Control
+
+```
+    AiryRefreshControl *footerRefreshControl = [AiryRefreshControl attachFooterRefreshControlToScrollView:self.scrollView target:self action:@selector(loadMore)];
+```
+
+#### Header & Footer Refresh Control
+
+```
+    AiryRefreshControl *refreshControl = [AiryRefreshControl attachRefreshControlToScrollview:self.scrollView target:self headerRefreshAction:@selector(loadLatest) footerRefreshAction:@selector(loadMore)];
+
+```
 
 ## Installation
 
@@ -22,7 +48,7 @@ pod "AiryRefreshControl"
 
 ## Author
 
-airymiao, airymiao@gmail.com
+[airymiao](airymiao@gmail.com)
 
 ## License
 
