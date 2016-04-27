@@ -31,6 +31,10 @@ Pod::Spec.new do |s|
   s.ios.deployment_target = '7.0'
 
   s.source_files = 'AiryRefreshControl/Classes/**/*'
+
+  # Load bundle image
+  # * NSBundle *bundle = [NSBundle bundleWithPath:[[NSBundle bundleForClass:[self class]] pathForResource:@"AiryRefreshControl" ofType:@"bundle"]];
+  # * UIImage *image = [UIImage imageNamed:@"image-name" inBundle:bundle compatibleWithTraitCollection:nil];
   s.resource_bundles = {
     'AiryRefreshControl' => ['AiryRefreshControl/Assets/*.png']
   }
