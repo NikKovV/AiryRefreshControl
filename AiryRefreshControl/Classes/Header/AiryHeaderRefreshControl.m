@@ -113,6 +113,10 @@
         refreshingEdgeInsets = _scrollViewOriginInset;
     }
     
+    if (!_isScrollViewOriginInsetChanged) {
+        return;
+    }
+    
     _scrollView.contentInset = refreshingEdgeInsets;
     
     [_scrollView setContentOffset:CGPointMake(0, -_scrollView.contentInset.top) animated:NO];
